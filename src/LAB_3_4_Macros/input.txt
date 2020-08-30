@@ -1,0 +1,20 @@
+START
+AR 2,3
+SR 4,4
+MACRO
+M1 &amp;S1
+AR 3,3
+MACRO
+&amp;S1 &amp;X
+SR 4,4
+L 1,F'4'
+DC A(&amp;X)
+L 2,V(&amp;S1)
+BALR 14,15
+MEND
+MEND
+AR 1,1
+M1 PQR
+SR 2,2
+PQR T
+END
