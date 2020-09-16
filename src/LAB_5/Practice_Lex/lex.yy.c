@@ -437,10 +437,9 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "spaces.l"
-/*Concatinating spaces*/
-#line 3 "spaces.l"
+#line 2 "spaces.l"
+#line 442 "lex.yy.c"
 #line 443 "lex.yy.c"
-#line 444 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -657,9 +656,9 @@ YY_DECL
 		}
 
 	{
-#line 5 "spaces.l"
+#line 4 "spaces.l"
 
-#line 663 "lex.yy.c"
+#line 662 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -719,20 +718,20 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 6 "spaces.l"
+#line 5 "spaces.l"
 {fprintf(yyout, "");}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 7 "spaces.l"
+#line 6 "spaces.l"
 {fprintf(yyout,"%s", yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 8 "spaces.l"
+#line 7 "spaces.l"
 ECHO;
 	YY_BREAK
-#line 736 "lex.yy.c"
+#line 735 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1737,15 +1736,18 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 8 "spaces.l"
+#line 7 "spaces.l"
 
 
 int yywrap(){
 }
 int main(){
 extern FILE *yyin, *yyout;
+
 yyin = fopen("Input.txt", "r");
+
 yyout = fopen("Output.txt", "w");
+
 yylex();
 return 0;
 }
